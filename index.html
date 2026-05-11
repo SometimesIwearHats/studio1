@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Studio 1 - A local gym in Town of Mount Royal, offering strength training, cardio, and personal training.">
+    <meta name="theme-color" content="#1a1a1a">
+    <title>Studio 1 - Gym in Town of Mount Royal</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- Announcement Bar (loaded dynamically) -->
+    <div id="announcement-bar" class="announcement-bar">
+        <div class="announcement-text"></div>
+    </div>
+
+    <!-- Navbar (loaded dynamically) -->
+    <header id="navbar-container"></header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="hero-content">
+                <div class="hero-logo">STUDIO 1</div>
+                <h1>Your Local Gym in the Heart of Town of Mount Royal</h1>
+                <p class="hero-subtitle">
+                    Located on Canora, right beside the Town of Mount Royal train station. 
+                    <br>Join a community dedicated to fitness and wellness.
+                </p>
+                <div class="hero-buttons">
+                    <button class="btn btn-primary" onclick="smoothScrollToElement('location'); return false;">Visit Us</button>
+                    <button class="btn btn-secondary" onclick="window.location.href='gallery.html'; return false;">Explore the Gym</button>
+                    <button class="btn btn-secondary" onclick="window.location.href='equipment.html'; return false;">View Equipment</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Studio 1 -->
+        <section class="container">
+            <h2>Welcome to Studio 1</h2>
+            <div class="cards-grid">
+                <div class="card">
+                    <div class="card-icon">💪</div>
+                    <h3>Quality Equipment</h3>
+                    <p class="card-description">
+                        We invest in premium strength training and cardio equipment to ensure every member has the tools they need to achieve their goals.
+                    </p>
+                </div>
+                <div class="card">
+                    <div class="card-icon">👥</div>
+                    <h3>Community Focused</h3>
+                    <p class="card-description">
+                        At Studio 1, we're not just a gym—we're a community. Meet like-minded fitness enthusiasts and build lasting connections.
+                    </p>
+                </div>
+                <div class="card">
+                    <div class="card-icon">📍</div>
+                    <h3>Convenient Location</h3>
+                    <p class="card-description">
+                        Located on Canora beside the TMR train station. Convenient access, dedicated parking, and a welcoming atmosphere.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Gym Features -->
+        <section class="container light-bg">
+            <h2>What We Offer</h2>
+            <div class="cards-grid">
+                <div class="card">
+                    <div class="card-icon">🏋️</div>
+                    <h3>Strength Training</h3>
+                    <p class="card-description">
+                        Full range of free weights, dumbbells, and barbell equipment for serious strength training.
+                    </p>
+                </div>
+                <div class="card">
+                    <div class="card-icon">🚴</div>
+                    <h3>Cardio Area</h3>
+                    <p class="card-description">
+                        Modern treadmills, stationary bikes, ellipticals, and rowing machines for your cardio needs.
+                    </p>
+                </div>
+                <div class="card">
+                    <div class="card-icon">⚙️</div>
+                    <h3>Weight Machines</h3>
+                    <p class="card-description">
+                        Professional-grade machines targeting all major muscle groups for safe and effective training.
+                    </p>
+                </div>
+                <div class="card">
+                    <div class="card-icon">👨‍🏫</div>
+                    <h3>Personal Training</h3>
+                    <p class="card-description">
+                        Work with experienced trainers to create a customized program tailored to your fitness goals.
+                    </p>
+                </div>
+                <div class="card">
+                    <div class="card-icon">🧘</div>
+                    <h3>Flexibility Area</h3>
+                    <p class="card-description">
+                        Dedicated space for stretching, recovery, and mobility work. Your body deserves proper recovery.
+                    </p>
+                </div>
+                <div class="card">
+                    <div class="card-icon">☕</div>
+                    <h3>Lounge & Amenities</h3>
+                    <p class="card-description">
+                        Clean facilities, locker rooms, showers, and a comfortable lounge to relax after your workout.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Membership Pitch Section -->
+        <section class="container">
+            <h2>Find the Right Plan for You</h2>
+            <div class="text-section">
+                <p>
+                    Every member has different goals, schedules, and training needs. That's why we don't post one-size-fits-all pricing online.
+                </p>
+                <p>
+                    <strong>Come see us in person</strong> so we can find the right plan for you. Tour the gym, meet our team, and speak with a Studio 1 sales representative. 
+                    We'll discuss your fitness goals, your schedule, and what matters most to you—then we'll find the perfect membership to match.
+                </p>
+                <p>
+                    Visit us on <strong>Canora beside the Town of Mount Royal train station</strong>, or give us a call. We're here to help.
+                </p>
+            </div>
+        </section>
+
+        <!-- Gallery Preview -->
+        <section class="container light-bg">
+            <h2>Take a Look Inside</h2>
+            <p class="text-center" style="color: var(--light-text); margin-bottom: var(--spacing-2xl);">
+                Explore our gym through photos. From our spacious training floor to our state-of-the-art equipment, 
+                see why Studio 1 is the right choice for your fitness journey.
+            </p>
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <div class="gallery-placeholder">
+                        <div style="font-size: 2rem; margin-bottom: var(--spacing-sm);">📷</div>
+                        <p>Entrance</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <div class="gallery-placeholder">
+                        <div style="font-size: 2rem; margin-bottom: var(--spacing-sm);">📷</div>
+                        <p>Reception</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <div class="gallery-placeholder">
+                        <div style="font-size: 2rem; margin-bottom: var(--spacing-sm);">📷</div>
+                        <p>Training Floor</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <div class="gallery-placeholder">
+                        <div style="font-size: 2rem; margin-bottom: var(--spacing-sm);">📷</div>
+                        <p>Free Weights</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <div class="gallery-placeholder">
+                        <div style="font-size: 2rem; margin-bottom: var(--spacing-sm);">📷</div>
+                        <p>Cardio Area</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <div class="gallery-placeholder">
+                        <div style="font-size: 2rem; margin-bottom: var(--spacing-sm);">📷</div>
+                        <p>Machines</p>
+                    </div>
+                </div>
+            </div>
+            <div style="text-align: center; margin-top: var(--spacing-xl);">
+                <a href="gallery.html" class="btn btn-primary">View Full Gallery</a>
+            </div>
+        </section>
+
+        <!-- Equipment Preview -->
+        <section class="container">
+            <h2>Our Equipment</h2>
+            <p class="text-center" style="color: var(--light-text); margin-bottom: var(--spacing-2xl);">
+                Studio 1 is fully equipped with professional-grade fitness equipment for all training styles. 
+                Check out our complete equipment catalogue.
+            </p>
+            <div class="cards-grid">
+                <div class="card">
+                    <div class="card-icon">🚴</div>
+                    <h3>Cardio Equipment</h3>
+                    <p class="card-description">
+                        Treadmills, stationary bikes, ellipticals, and more to get your heart pumping.
+                    </p>
+                </div>
+                <div class="card">
+                    <div class="card-icon">🏋️</div>
+                    <h3>Free Weights</h3>
+                    <p class="card-description">
+                        Complete range of dumbbells and barbells for traditional strength training.
+                    </p>
+                </div>
+                <div class="card">
+                    <div class="card-icon">⚙️</div>
+                    <h3>Machines</h3>
+                    <p class="card-description">
+                        Professional weight machines targeting all major muscle groups.
+                    </p>
+                </div>
+                <div class="card">
+                    <div class="card-icon">🧗</div>
+                    <h3>Functional Training</h3>
+                    <p class="card-description">
+                        Cables, racks, benches, and functional training equipment for dynamic workouts.
+                    </p>
+                </div>
+            </div>
+            <div style="text-align: center; margin-top: var(--spacing-xl);">
+                <a href="equipment.html" class="btn btn-primary">View All Equipment</a>
+            </div>
+        </section>
+
+        <!-- Location & Hours Section -->
+        <section class="container light-bg" id="location">
+            <h2>Visit Us</h2>
+            <div class="location-content">
+                <div class="location-info">
+                    <h3>Studio 1 Location</h3>
+                    <p>
+                        We're located on <strong>Canora Street</strong> in the heart of <strong>Town of Mount Royal</strong>, 
+                        right beside the Town of Mount Royal train station.
+                    </p>
+                    <p>
+                        <strong>Easy to find, easy to visit.</strong> Whether you're driving or taking the train, 
+                        Studio 1 is convenient and accessible.
+                    </p>
+                    
+                    <h4 style="margin-top: var(--spacing-xl); margin-bottom: var(--spacing-md);">Contact Info</h4>
+                    <p>
+                        <strong>Phone:</strong> <a href="tel:+1234567890">(123) 456-7890</a>
+                    </p>
+                    <p>
+                        <strong>Email:</strong> <a href="mailto:info@studio1gym.com">info@studio1gym.com</a>
+                    </p>
+                    
+                    <h4 style="margin-top: var(--spacing-xl); margin-bottom: var(--spacing-md);">Hours</h4>
+                    <p>
+                        Monday - Friday: 6:00 AM - 10:00 PM<br>
+                        Saturday: 8:00 AM - 8:00 PM<br>
+                        Sunday: 8:00 AM - 6:00 PM
+                    </p>
+                </div>
+                
+                <div>
+                    <div class="map-placeholder">
+                        <div>
+                            <div style="font-size: 2rem; margin-bottom: var(--spacing-sm);">📍</div>
+                            <p>Google Maps Embed</p>
+                            <p style="font-size: var(--font-size-sm); color: #999;">Canora Street, Town of Mount Royal</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer (loaded dynamically) -->
+    <footer id="footer-container"></footer>
+
+    <!-- Scripts -->
+    <script src="js/announcements.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!-- Navbar Component -->
+<nav class="navbar" role="navigation" aria-label="Main navigation">
+    <div class="navbar-container">
+        <!-- Logo/Brand -->
+        <div class="navbar-brand">
+            <a href="index.html" class="brand-link">
+                <span class="brand-name">Studio 1</span>
+            </a>
+        </div>
+        
+        <!-- Mobile Toggle Button -->
+        <button class="nav-toggle" aria-expanded="false" aria-label="Toggle navigation menu">
+            <span class="hamburger"></span>
+            <span class="hamburger"></span>
+            <span class="hamburger"></span>
+        </button>
+        
+        <!-- Navigation Menu -->
+        <ul class="nav-menu">
+            <li><a href="index.html" class="nav-link">Home</a></li>
+            <li><a href="gallery.html" class="nav-link">Gallery</a></li>
+            <li><a href="equipment.html" class="nav-link">Equipment</a></li>
+            <li><a href="index.html#location" class="nav-link">Location</a></li>
+            <li>
+                <a href="https://www.instagram.com" class="nav-link nav-social" target="_blank" rel="noopener noreferrer" aria-label="Visit our Instagram">
+                    <span>Instagram</span>
+                </a>
+            </li>
+            <li class="nav-phone">
+                <a href="tel:+1234567890" class="nav-link">Call: (123) 456-7890</a>
+            </li>
+        </ul>
+        
+        <!-- Call-to-Action Button -->
+        <a href="#contact-section" class="nav-cta-button" onclick="smoothScrollToElement('location'); return false;">Visit Us</a>
+    </div>
+</nav>
