@@ -202,6 +202,8 @@ For the equipment catalogue, follow this recommended folder convention:
   `assets/images/equipment/u-157/01-main.jpg`
 - Add more photos by adding additional image objects:
   `02-side.jpg`, `03-detail.jpg`, `04-in-use.jpg`
+- Place real machine photos inside the matching folder for each equipment item.
+- The repository includes `.gitkeep` files in these folders so Git can track the empty directories until real photos are added.
 
 ### Unknown Equipment Names
 - If an equipment name is uncertain, use a safe placeholder like `Atlantis C-423`.
