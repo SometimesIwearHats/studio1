@@ -3,19 +3,19 @@
  *
  * Each equipment item supports multiple images and optional manufacturer/source links.
  * Recommended folder convention for equipment images:
- *   assets/images/equipment/c-401-leg-press/01-main.jpg
- *   assets/images/equipment/c-401-leg-press/02-side.jpg
- *   assets/images/equipment/c-401-leg-press/03-detail.jpg
+ *   assets/images/equipment/c-401-leg-press/01-main.webp
+ *   assets/images/equipment/c-401-leg-press/02-side.webp
+ *   assets/images/equipment/c-401-leg-press/03-detail.webp
  *
  * For unknown equipment names, keep the folder slug as the model code:
- *   assets/images/equipment/c-423/01-main.jpg
- *   assets/images/equipment/u-157/01-main.jpg
+ *   assets/images/equipment/c-423/01-main.webp
+ *   assets/images/equipment/u-157/01-main.webp
  *
  * Recommended image file names:
- *   01-main.jpg
- *   02-side.jpg
- *   03-detail.jpg
- *   04-in-use.jpg
+ *   01-main.webp
+ *   02-side.webp
+ *   03-detail.webp
+ *   04-in-use.webp
  *
  * Update uncertain equipment entries later once photos and specifications are confirmed.
  */
@@ -30,11 +30,11 @@ window.EQUIPMENT_ITEMS = [
         bestFor: "Quads, glutes, hamstrings",
         images: [
             {
-                src: "assets/images/equipment/c-401-leg-press/01-main.jpg",
+                src: "assets/images/equipment/c-401-leg-press/01-main.webp",
                 alt: "Atlantis C-401 40 Degree Leg Press at Studio 1"
             },
             {
-                src: "assets/images/equipment/c-401-leg-press/02-side.jpg",
+                src: "assets/images/equipment/c-401-leg-press/02-side.webp",
                 alt: "Side view of the Atlantis C-401 Leg Press at Studio 1"
             }
         ],
@@ -49,7 +49,7 @@ window.EQUIPMENT_ITEMS = [
         bestFor: "To be confirmed",
         images: [
             {
-                src: "assets/images/equipment/m-118/01-main.jpg",
+                src: "assets/images/equipment/m-118/01-main.webp",
                 alt: "Atlantis M-118 placeholder image"
             }
         ]
@@ -63,7 +63,7 @@ window.EQUIPMENT_ITEMS = [
         bestFor: "To be confirmed",
         images: [
             {
-                src: "assets/images/equipment/c-423/01-main.jpg",
+                src: "assets/images/equipment/c-423/01-main.webp",
                 alt: "Atlantis C-423 placeholder image"
             }
         ]
@@ -77,7 +77,7 @@ window.EQUIPMENT_ITEMS = [
         bestFor: "To be confirmed",
         images: [
             {
-                src: "assets/images/equipment/c-329/01-main.jpg",
+                src: "assets/images/equipment/c-329/01-main.webp",
                 alt: "Atlantis C-329 placeholder image"
             }
         ]
@@ -91,7 +91,7 @@ window.EQUIPMENT_ITEMS = [
         bestFor: "To be confirmed",
         images: [
             {
-                src: "assets/images/equipment/c-118/01-main.jpg",
+                src: "assets/images/equipment/c-118/01-main.webp",
                 alt: "Atlantis C-118 placeholder image"
             }
         ]
@@ -105,7 +105,7 @@ window.EQUIPMENT_ITEMS = [
         bestFor: "To be confirmed",
         images: [
             {
-                src: "assets/images/equipment/u-403/01-main.jpg",
+                src: "assets/images/equipment/u-403/01-main.webp",
                 alt: "Atlantis U-403 placeholder image"
             }
         ]
@@ -119,7 +119,7 @@ window.EQUIPMENT_ITEMS = [
         bestFor: "To be confirmed",
         images: [
             {
-                src: "assets/images/equipment/m-219/01-main.jpg",
+                src: "assets/images/equipment/m-219/01-main.webp",
                 alt: "Atlantis M-219 placeholder image"
             }
         ]
@@ -133,7 +133,7 @@ window.EQUIPMENT_ITEMS = [
         bestFor: "To be confirmed",
         images: [
             {
-                src: "assets/images/equipment/c-106-c-406/01-main.jpg",
+                src: "assets/images/equipment/c-106-c-406/01-main.webp",
                 alt: "Atlantis C-106 / C-406 placeholder image"
             }
         ]
@@ -147,7 +147,7 @@ window.EQUIPMENT_ITEMS = [
         bestFor: "To be confirmed",
         images: [
             {
-                src: "assets/images/equipment/u-105/01-main.jpg",
+                src: "assets/images/equipment/u-105/01-main.webp",
                 alt: "Atlantis U-105 placeholder image"
             }
         ]
@@ -161,7 +161,7 @@ window.EQUIPMENT_ITEMS = [
         bestFor: "To be confirmed",
         images: [
             {
-                src: "assets/images/equipment/u-106/01-main.jpg",
+                src: "assets/images/equipment/u-106/01-main.webp",
                 alt: "Atlantis U-106 placeholder image"
             }
         ]
@@ -175,7 +175,7 @@ window.EQUIPMENT_ITEMS = [
         bestFor: "To be confirmed",
         images: [
             {
-                src: "assets/images/equipment/d-131/01-main.jpg",
+                src: "assets/images/equipment/d-131/01-main.webp",
                 alt: "Atlantis D-131 placeholder image"
             }
         ]
@@ -189,7 +189,7 @@ window.EQUIPMENT_ITEMS = [
         bestFor: "To be confirmed",
         images: [
             {
-                src: "assets/images/equipment/u-149/01-main.jpg",
+                src: "assets/images/equipment/u-149/01-main.webp",
                 alt: "Atlantis U-149 placeholder image"
             }
         ]
@@ -203,7 +203,7 @@ window.EQUIPMENT_ITEMS = [
         bestFor: "To be confirmed",
         images: [
             {
-                src: "assets/images/equipment/u-140/01-main.jpg",
+                src: "assets/images/equipment/u-140/01-main.webp",
                 alt: "Atlantis U-140 placeholder image"
             }
         ]
@@ -217,7 +217,7 @@ window.EQUIPMENT_ITEMS = [
         bestFor: "To be confirmed",
         images: [
             {
-                src: "assets/images/equipment/nm-510/01-main.jpg",
+                src: "assets/images/equipment/nm-510/01-main.webp",
                 alt: "Atlantis NM-510 placeholder image"
             }
         ]
@@ -231,7 +231,7 @@ window.EQUIPMENT_ITEMS = [
         bestFor: "To be confirmed",
         images: [
             {
-                src: "assets/images/equipment/u-157/01-main.jpg",
+                src: "assets/images/equipment/u-157/01-main.webp",
                 alt: "Atlantis U-157 placeholder image"
             }
         ]
@@ -245,7 +245,7 @@ window.EQUIPMENT_ITEMS = [
         bestFor: "To be confirmed",
         images: [
             {
-                src: "assets/images/equipment/e-154-e-155/01-main.jpg",
+                src: "assets/images/equipment/e-154-e-155/01-main.webp",
                 alt: "Atlantis E-154 / E-155 placeholder image"
             }
         ]
@@ -259,7 +259,7 @@ window.EQUIPMENT_ITEMS = [
         bestFor: "To be confirmed",
         images: [
             {
-                src: "assets/images/equipment/bench-press/01-main.jpg",
+                src: "assets/images/equipment/bench-press/01-main.webp",
                 alt: "Atlantis Bench Press placeholder image"
             }
         ]
@@ -273,7 +273,7 @@ window.EQUIPMENT_ITEMS = [
         bestFor: "To be confirmed",
         images: [
             {
-                src: "assets/images/equipment/p-156/01-main.jpg",
+                src: "assets/images/equipment/p-156/01-main.webp",
                 alt: "Atlantis P-156 placeholder image"
             }
         ]
@@ -287,7 +287,7 @@ window.EQUIPMENT_ITEMS = [
         bestFor: "To be confirmed",
         images: [
             {
-                src: "assets/images/equipment/nm-500/01-main.jpg",
+                src: "assets/images/equipment/nm-500/01-main.webp",
                 alt: "Atlantis NM-500 placeholder image"
             }
         ]
@@ -301,7 +301,7 @@ window.EQUIPMENT_ITEMS = [
         bestFor: "To be confirmed",
         images: [
             {
-                src: "assets/images/equipment/d-132/01-main.jpg",
+                src: "assets/images/equipment/d-132/01-main.webp",
                 alt: "Atlantis D-132 placeholder image"
             }
         ]
@@ -315,7 +315,7 @@ window.EQUIPMENT_ITEMS = [
         bestFor: "To be confirmed",
         images: [
             {
-                src: "assets/images/equipment/d-512/01-main.jpg",
+                src: "assets/images/equipment/d-512/01-main.webp",
                 alt: "Atlantis D-512 placeholder image"
             }
         ]
@@ -329,7 +329,7 @@ window.EQUIPMENT_ITEMS = [
         bestFor: "To be confirmed",
         images: [
             {
-                src: "assets/images/equipment/d-126/01-main.jpg",
+                src: "assets/images/equipment/d-126/01-main.webp",
                 alt: "Atlantis D-126 placeholder image"
             }
         ]
@@ -343,7 +343,7 @@ window.EQUIPMENT_ITEMS = [
         bestFor: "To be confirmed",
         images: [
             {
-                src: "assets/images/equipment/p-443-p-543/01-main.jpg",
+                src: "assets/images/equipment/p-443-p-543/01-main.webp",
                 alt: "Atlantis P-443 / P-543 placeholder image"
             }
         ]
@@ -357,7 +357,7 @@ window.EQUIPMENT_ITEMS = [
         bestFor: "To be confirmed",
         images: [
             {
-                src: "assets/images/equipment/e-449-e-549/01-main.jpg",
+                src: "assets/images/equipment/e-449-e-549/01-main.webp",
                 alt: "Atlantis E-449 / E-549 placeholder image"
             }
         ]
@@ -371,7 +371,7 @@ window.EQUIPMENT_ITEMS = [
         bestFor: "To be confirmed",
         images: [
             {
-                src: "assets/images/equipment/p-441/01-main.jpg",
+                src: "assets/images/equipment/p-441/01-main.webp",
                 alt: "Atlantis P-441 placeholder image"
             }
         ]
@@ -385,15 +385,15 @@ window.EQUIPMENT_ITEMS = [
         bestFor: "Running, speed work, endurance",
         images: [
             {
-                src: "assets/images/equipment/cr-210-treadmill/01-main.jpg",
+                src: "assets/images/equipment/cr-210-treadmill/01-main.webp",
                 alt: "Studio 1 NordicTrack Performance Treadmill"
             },
             {
-                src: "assets/images/equipment/cr-210-treadmill/02-console.jpg",
+                src: "assets/images/equipment/cr-210-treadmill/02-console.webp",
                 alt: "Treadmill console and display on the Studio 1 cardio machine"
             },
             {
-                src: "assets/images/equipment/cr-210-treadmill/03-side.jpg",
+                src: "assets/images/equipment/cr-210-treadmill/03-side.webp",
                 alt: "Side profile of the NordicTrack treadmill at Studio 1"
             }
         ],
@@ -408,7 +408,7 @@ window.EQUIPMENT_ITEMS = [
         bestFor: "Free weight circuits, strength, toning",
         images: [
             {
-                src: "assets/images/equipment/fw-120-dumbbells/01-main.jpg",
+                src: "assets/images/equipment/fw-120-dumbbells/01-main.webp",
                 alt: "Studio 1 Bowflex adjustable dumbbells"
             }
         ]
@@ -422,11 +422,11 @@ window.EQUIPMENT_ITEMS = [
         bestFor: "Core, pull movements, resistance training",
         images: [
             {
-                src: "assets/images/equipment/fn-310-functional-trainer/01-main.jpg",
+                src: "assets/images/equipment/fn-310-functional-trainer/01-main.webp",
                 alt: "Hoist functional trainer at Studio 1"
             },
             {
-                src: "assets/images/equipment/fn-310-functional-trainer/02-cables.jpg",
+                src: "assets/images/equipment/fn-310-functional-trainer/02-cables.webp",
                 alt: "Cable attachments on the Studio 1 functional trainer"
             }
         ]
@@ -440,11 +440,11 @@ window.EQUIPMENT_ITEMS = [
         bestFor: "Squats, bench press, powerlifting",
         images: [
             {
-                src: "assets/images/equipment/bw-205-power-rack/01-main.jpg",
+                src: "assets/images/equipment/bw-205-power-rack/01-main.webp",
                 alt: "Studio 1 Rogue Olympic Power Rack"
             },
             {
-                src: "assets/images/equipment/bw-205-power-rack/02-rack.jpg",
+                src: "assets/images/equipment/bw-205-power-rack/02-rack.webp",
                 alt: "Rogue power rack safety bar setup at Studio 1"
             }
         ],

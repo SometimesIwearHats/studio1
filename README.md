@@ -165,10 +165,10 @@ const ANNOUNCEMENTS = [
 4. **Equipment photos:** Add to `assets/images/equipment/`
 
 For the equipment catalogue, follow this recommended folder convention:
-- `assets/images/equipment/c-401-leg-press/01-main.jpg`
-- `assets/images/equipment/c-401-leg-press/02-side.jpg`
-- `assets/images/equipment/c-401-leg-press/03-detail.jpg`
-- `assets/images/equipment/c-401-leg-press/04-in-use.jpg`
+- `assets/images/equipment/c-401-leg-press/01-main.webp`
+- `assets/images/equipment/c-401-leg-press/02-side.webp`
+- `assets/images/equipment/c-401-leg-press/03-detail.webp`
+- `assets/images/equipment/c-401-leg-press/04-in-use.webp`
 
 ### Equipment Grid Behavior
 - The equipment catalogue uses a responsive card grid.
@@ -194,16 +194,18 @@ For the equipment catalogue, follow this recommended folder convention:
 
 ### Adding Equipment Photos
 - Use a clean image folder path for each machine:
-  `assets/images/equipment/<machine-slug>/01-main.jpg`
+  `assets/images/equipment/<machine-slug>/01-main.webp`
 - Known machines can use a readable slug, for example:
-  `assets/images/equipment/c-401-leg-press/01-main.jpg`
+  `assets/images/equipment/c-401-leg-press/01-main.webp`
 - Unknown machine entries should use the model code slug:
-  `assets/images/equipment/c-423/01-main.jpg`
-  `assets/images/equipment/u-157/01-main.jpg`
+  `assets/images/equipment/c-423/01-main.webp`
+  `assets/images/equipment/u-157/01-main.webp`
 - Add more photos by adding additional image objects:
-  `02-side.jpg`, `03-detail.jpg`, `04-in-use.jpg`
+  `02-side.webp`, `03-detail.webp`, `04-in-use.webp`
 - Place real machine photos inside the matching folder for each equipment item.
 - The repository includes `.gitkeep` files in these folders so Git can track the empty directories until real photos are added.
+- Recommended format is .webp because it is smaller and loads faster.
+- If someone uses .jpg or .png later, they must update the matching path in js/equipment-data.js.
 
 ### Unknown Equipment Names
 - If an equipment name is uncertain, use a safe placeholder like `Atlantis C-423`.
