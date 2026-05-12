@@ -164,6 +164,49 @@ const ANNOUNCEMENTS = [
 3. **Gallery images:** Add to `assets/images/gallery/`
 4. **Equipment photos:** Add to `assets/images/equipment/`
 
+For the equipment catalogue, follow this recommended folder convention:
+- `assets/images/equipment/c-401-leg-press/01-main.jpg`
+- `assets/images/equipment/c-401-leg-press/02-side.jpg`
+- `assets/images/equipment/c-401-leg-press/03-detail.jpg`
+- `assets/images/equipment/c-401-leg-press/04-in-use.jpg`
+
+### Equipment Grid Behavior
+- The equipment catalogue uses a responsive card grid.
+- On desktop screens, the equipment catalogue shows two columns of machine cards.
+- On smaller screens and mobile, the page switches to one column for readability.
+- Cards remain consistent in height and layout even when images are missing.
+
+### Adding a New Equipment Item
+1. Open `js/equipment-data.js`.
+2. Add a new object to the `window.EQUIPMENT_ITEMS` array.
+3. Include these fields:
+   - `code`
+   - `name`
+   - `brand`
+   - `category`
+   - `description`
+   - `bestFor`
+   - `images` (array of `{ src, alt }` objects)
+   - Optional `sourceUrl`
+4. Add one image or multiple sequential images for the same machine.
+   - Single image items automatically hide carousel arrows and dots.
+   - Multiple image items automatically enable carousel navigation, dot indicators, and image counts.
+
+### Adding Equipment Photos
+- Use a clean image folder path for each machine:
+  `assets/images/equipment/<machine-slug>/01-main.jpg`
+- Known machines can use a readable slug, for example:
+  `assets/images/equipment/c-401-leg-press/01-main.jpg`
+- Unknown machine entries should use the model code slug:
+  `assets/images/equipment/c-423/01-main.jpg`
+  `assets/images/equipment/u-157/01-main.jpg`
+- Add more photos by adding additional image objects:
+  `02-side.jpg`, `03-detail.jpg`, `04-in-use.jpg`
+
+### Unknown Equipment Names
+- If an equipment name is uncertain, use a safe placeholder like `Atlantis C-423`.
+- Update the item later once Studio 1 photos and specifications are confirmed.
+
 Then update the HTML to reference your images:
 
 ```html
