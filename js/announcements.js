@@ -33,29 +33,34 @@ function getActiveAnnouncement() {
 }
 
 /**
- * Renders the announcement bar
- * This function is called by main.js
+ * Renders the announcement bar.
+ * If there is no active announcement, the bar remains hidden.
  */
 function renderAnnouncementBar() {
     const announcement = getActiveAnnouncement();
     const announcementBar = document.getElementById('announcement-bar');
-    
-    if (!announcement || !announcementBar) {
+    if (!announcementBar) {
         return;
     }
-    
-    // Set the announcement text
+
+    // Reset any previous type-specific styling
+    announcementBar.classList.remove('announcement-warning', 'announcement-info', 'announcement-success');
+
+    if (!announcement) {
+        announcementBar.style.display = 'none';
+        return;
+    }
+
     const announcementText = announcementBar.querySelector('.announcement-text');
     if (announcementText) {
         announcementText.textContent = announcement.text;
     }
-    
+
     // Add type class for styling if specified
     if (announcement.type) {
         announcementBar.classList.add(`announcement-${announcement.type}`);
     }
-    
-    // Show the announcement bar
+
     announcementBar.style.display = 'block';
 }
 

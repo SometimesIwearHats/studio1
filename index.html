@@ -27,8 +27,11 @@
                     Located on Canora, right beside the Town of Mount Royal train station. 
                     <br>Join a community dedicated to fitness and wellness.
                 </p>
+                <div class="hero-media">
+                    <img src="assets/images/hero/studio-1-hero.jpg" alt="Studio 1 gym interior on Canora" class="hero-image" loading="lazy">
+                </div>
                 <div class="hero-buttons">
-                    <a href="https://www.google.com/maps/place/Studio+1+Gym/@45.5171466,-73.6470891,17z/data=!3m1!4b1!4m6!3m5!1s0x4cc919adff4fad75:0x8b262b7abc46507a!8m2!3d45.5171466!4d-73.6445142!16s%2Fg%2F1tf3b4ml?entry=ttu&g_ep=EgoyMDI2MDUwNi4wIKXMDSoASAFQAw%3D%3D" class="btn btn-primary" target="_blank" rel="noopener noreferrer">Visit Us</a>
+                    <a href="index.html#location" class="btn btn-primary">Visit Us</a>
                     <button class="btn btn-secondary" onclick="window.location.href='gallery.html'; return false;">Explore the Gym</button>
                     <button class="btn btn-secondary" onclick="window.location.href='equipment.html'; return false;">View Equipment</button>
                 </div>
@@ -137,42 +140,30 @@
                 see why Studio 1 is the right choice for your fitness journey.
             </p>
             <div class="gallery-grid">
-                <div class="gallery-item">
-                    <div class="gallery-placeholder">
-                        <div style="font-size: 2rem; margin-bottom: var(--spacing-sm);">📷</div>
-                        <p>Entrance</p>
-                    </div>
-                </div>
-                <div class="gallery-item">
-                    <div class="gallery-placeholder">
-                        <div style="font-size: 2rem; margin-bottom: var(--spacing-sm);">📷</div>
-                        <p>Reception</p>
-                    </div>
-                </div>
-                <div class="gallery-item">
-                    <div class="gallery-placeholder">
-                        <div style="font-size: 2rem; margin-bottom: var(--spacing-sm);">📷</div>
-                        <p>Training Floor</p>
-                    </div>
-                </div>
-                <div class="gallery-item">
-                    <div class="gallery-placeholder">
-                        <div style="font-size: 2rem; margin-bottom: var(--spacing-sm);">📷</div>
-                        <p>Free Weights</p>
-                    </div>
-                </div>
-                <div class="gallery-item">
-                    <div class="gallery-placeholder">
-                        <div style="font-size: 2rem; margin-bottom: var(--spacing-sm);">📷</div>
-                        <p>Cardio Area</p>
-                    </div>
-                </div>
-                <div class="gallery-item">
-                    <div class="gallery-placeholder">
-                        <div style="font-size: 2rem; margin-bottom: var(--spacing-sm);">📷</div>
-                        <p>Machines</p>
-                    </div>
-                </div>
+                <figure class="gallery-item">
+                    <img src="assets/images/gallery/entrance.jpg" alt="Entrance at Studio 1 gym" loading="lazy" />
+                    <figcaption>Entrance</figcaption>
+                </figure>
+                <figure class="gallery-item">
+                    <img src="assets/images/gallery/reception.jpg" alt="Reception area with front desk at Studio 1" loading="lazy" />
+                    <figcaption>Reception & Amenities</figcaption>
+                </figure>
+                <figure class="gallery-item">
+                    <img src="assets/images/gallery/training-floor.jpg" alt="Training floor at Studio 1" loading="lazy" />
+                    <figcaption>Training Floor</figcaption>
+                </figure>
+                <figure class="gallery-item">
+                    <img src="assets/images/gallery/free-weights.jpg" alt="Free weights area at Studio 1" loading="lazy" />
+                    <figcaption>Free Weights</figcaption>
+                </figure>
+                <figure class="gallery-item">
+                    <img src="assets/images/gallery/cardio-area.jpg" alt="Cardio equipment area at Studio 1" loading="lazy" />
+                    <figcaption>Cardio Area</figcaption>
+                </figure>
+                <figure class="gallery-item">
+                    <img src="assets/images/gallery/weight-machines.jpg" alt="Weight machines at Studio 1" loading="lazy" />
+                    <figcaption>Weight Machines</figcaption>
+                </figure>
             </div>
             <div style="text-align: center; margin-top: var(--spacing-xl);">
                 <a href="gallery.html" class="btn btn-primary">View Full Gallery</a>
@@ -238,7 +229,7 @@
                     
                     <h4 style="margin-top: var(--spacing-xl); margin-bottom: var(--spacing-md);">Contact Info</h4>
                     <p>
-                        <strong>Phone:</strong> <a href="tel:+1234567890">(514) 448-0277</a>
+                        <strong>Phone:</strong> <a href="tel:+15144480277">(514) 448-0277</a>
                     </p>
                     <p>
                         <strong>Email:</strong> <a href="mailto:info@studio1gym.com">info@studio1gym.com</a>
@@ -253,12 +244,19 @@
                 </div>
                 
                 <div>
-                    <div class="map-placeholder">
-                        <div>
-                            <div style="font-size: 2rem; margin-bottom: var(--spacing-sm);">📍</div>
-                            <p>Google Maps Embed</p>
-                            <p style="font-size: var(--font-size-sm); color: #999;">Canora Street, Town of Mount Royal</p>
-                        </div>
+                    <div class="map-container">
+                        <!-- Replace the src below with the Studio 1 Google Maps embed URL when available -->
+                        <iframe
+                            class="responsive-map"
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2833.4184977769626!2d-73.64671478441876!3d45.51756757910171!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cc919adff4fad75%3A0x8b262b7abc46507a!2s1385%20Chemin%20Canora!5e0!3m2!1sen!2sca!4v0000000000000"
+                            allowfullscreen=""
+                            loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"
+                            title="Studio 1 gym location in Town of Mount Royal"
+                        ></iframe>
+                    </div>
+                    <div style="margin-top: var(--spacing-md); text-align: center;">
+                        <a href="https://www.google.com/maps/dir/?api=1&destination=Studio+1+Gym+Canora+Town+of+Mount+Royal" class="btn btn-secondary" target="_blank" rel="noopener noreferrer">Get Directions</a>
                     </div>
                 </div>
             </div>

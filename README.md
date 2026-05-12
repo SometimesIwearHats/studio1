@@ -175,7 +175,7 @@ Then update the HTML to reference your images:
 Replace placeholder contact details in:
 
 1. **Navigation:** `components/navbar.html`
-   - Phone number in link: `href="tel:+1234567890"`
+   - Phone number in link: `href="tel:+15144480277"`
    - Instagram link: `href="https://www.instagram.com"`
 
 2. **Footer:** `components/footer.html`
@@ -187,6 +187,33 @@ Replace placeholder contact details in:
    - Google Maps link
 
 3. **Home page location section:** `index.html` (search for "Location & Hours")
+
+### Replacing the Google Maps Embed
+
+The home page includes a responsive map placeholder in `index.html`.
+- Look for the `<iframe>` inside the `Location & Hours` section.
+- Replace the `src` value with your real Studio 1 Google Maps embed URL.
+- Update the `Get Directions` link URL if you want a custom route link.
+
+### Real image path examples
+
+The HTML uses placeholder image paths for future real assets:
+- `assets/images/hero/studio-1-hero.jpg`
+- `assets/images/gallery/entrance.jpg`
+- `assets/images/gallery/training-floor.jpg`
+- `assets/images/gallery/cardio-area.jpg`
+- `assets/images/gallery/weight-machines.jpg`
+- `assets/images/equipment/treadmills.jpg`
+- `assets/images/equipment/leg-press.jpg`
+- `assets/images/equipment/weight-benches.jpg`
+
+### Shared navbar/footer
+
+The site loads shared components from the `components/` folder using JavaScript.
+- `components/navbar.html`
+- `components/footer.html`
+
+Update contact details, social links, and the visit button in those shared components to reflect your Studio 1 branding.
 
 ### Updating Colors & Branding
 

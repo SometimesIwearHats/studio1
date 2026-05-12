@@ -15,7 +15,8 @@
  */
 async function loadComponent(componentName, targetElementId) {
     try {
-        const response = await fetch(`/components/${componentName}.html`);
+        // Use relative paths so component loading works in local development and with Live Server
+        const response = await fetch(`components/${componentName}.html`);
         if (!response.ok) {
             throw new Error(`Failed to load ${componentName} component`);
         }
@@ -57,6 +58,18 @@ function initMobileNav() {
 }
 
 /**
+ * Hide broken image elements so placeholder layouts remain clean when image assets are missing.
+ */
+function hideBrokenImages() {
+    const images = document.querySelectorAll('img');
+    images.forEach(image => {
+        image.addEventListener('error', () => {
+            image.style.display = 'none';
+        });
+    });
+}
+
+/**
  * Initialize the page
  * This function runs when the DOM is fully loaded
  */
@@ -67,6 +80,9 @@ async function initializePage() {
     
     // Initialize mobile navigation
     initMobileNav();
+
+    // Hide any missing images so the layout stays clean with placeholder assets
+    hideBrokenImages();
     
     // Render announcement bar
     if (typeof renderAnnouncementBar === 'function') {
