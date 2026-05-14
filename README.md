@@ -175,6 +175,7 @@ For the equipment catalogue, follow this recommended folder convention:
 - On desktop screens, the equipment catalogue shows two columns of machine cards.
 - On smaller screens and mobile, the page switches to one column for readability.
 - Cards remain consistent in height and layout even when images are missing.
+- Missing or unavailable equipment images gracefully fall back to alt text instead of breaking the page.
 
 ### Adding a New Equipment Item
 1. Open `js/equipment-data.js`.
@@ -202,10 +203,17 @@ For the equipment catalogue, follow this recommended folder convention:
   `assets/images/equipment/u-157/01-main.webp`
 - Add more photos by adding additional image objects:
   `02-side.webp`, `03-detail.webp`, `04-in-use.webp`
+- If an original file contains the word “principal,” rename it to `01-main` and use it as the first image in the carousel.
+- Real equipment photos may be `.webp`, `.jpg`, `.jpeg`, or `.png`.
+- The file extension in `js/equipment-data.js` must match the actual image file exactly.
 - Place real machine photos inside the matching folder for each equipment item.
 - The repository includes `.gitkeep` files in these folders so Git can track the empty directories until real photos are added.
-- Recommended format is .webp because it is smaller and loads faster.
-- If someone uses .jpg or .png later, they must update the matching path in js/equipment-data.js.
+- Recommended naming convention is:
+  `01-main.webp`
+  `02-side.webp`
+  `03-detail.webp`
+  `04-in-use.webp`
+- Misc/general gym images can be placed in `assets/images/equipment/misc/` and added as general equipment or category cards.
 
 ### Unknown Equipment Names
 - If an equipment name is uncertain, use a safe placeholder like `Atlantis C-423`.

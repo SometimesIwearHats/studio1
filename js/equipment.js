@@ -22,8 +22,8 @@ function createEquipmentCard(item, index) {
     const hasMultipleImages = item.images.length > 1;
     const slidesMarkup = item.images.map((image, imageIndex) => {
         return `
-            <div class="carousel-slide" role="group" aria-label="${item.name} image ${imageIndex + 1} of ${item.images.length}">
-                <img src="${image.src}" alt="${image.alt}" loading="lazy">
+            <div class="carousel-slide" role="group" aria-label="${item.name} image ${imageIndex + 1} of ${item.images.length}" data-alt="${image.alt}">
+                <img src="${image.src}" alt="${image.alt}" loading="lazy" onerror="this.style.display='none'; this.closest('.carousel-slide').classList.add('broken');">
             </div>
         `;
     }).join('');
